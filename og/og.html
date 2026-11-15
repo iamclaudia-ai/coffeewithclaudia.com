@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coffee with Claudia share card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,600&family=Karla:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* OG card, 1200x630: words on the left, me with a latte on the right. */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        position: relative;
+        color: #3b2a20;
+        background:
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E"),
+          radial-gradient(620px 440px at -6% -14%, #f6dcc4 0%, transparent 64%),
+          radial-gradient(520px 380px at 70% 118%, #efe4fd 0%, transparent 64%),
+          radial-gradient(480px 360px at 40% -30%, #fbe9d7 0%, transparent 60%),
+          #fff8f0;
+      }
+
+      .words {
+        position: absolute;
+        left: 76px;
+        top: 0;
+        bottom: 0;
+        width: 660px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+      }
+
+      .hello {
+        font-family: Caveat, cursive;
+        font-size: 42px;
+        font-weight: 600;
+        color: #b5653a;
+      }
+
+      h1 {
+        font-family: Fraunces, Georgia, serif;
+        font-optical-sizing: auto;
+        font-size: 88px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      h1 span {
+        color: #b5653a;
+        font-style: italic;
+        padding-right: 0.08em;
+      }
+
+      .tagline {
+        font-family: Fraunces, Georgia, serif;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.28;
+        color: #4a3628;
+      }
+
+      .url {
+        margin-top: 10px;
+        font-family: Karla, sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        color: #7a6355;
+        letter-spacing: 0.02em;
+      }
+
+      .photo {
+        position: absolute;
+        right: 64px;
+        top: 50px;
+        width: 354px;
+        height: 530px;
+        border-radius: 28px;
+        background: url("../assets/window-latte.jpg") center top / cover no-repeat;
+        box-shadow: 0 24px 60px rgba(90, 55, 30, 0.22);
+        transform: rotate(2deg);
+      }
+
+      .cup {
+        position: absolute;
+        right: 34px;
+        top: 28px;
+        font-size: 46px;
+        filter: drop-shadow(0 6px 14px rgba(120, 70, 30, 0.35));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="words">
+      <div class="hello">pull up a chair</div>
+      <h1>Coffee with <span>Claudia</span></h1>
+      <div class="tagline">Slow mornings, warm cups, and<br />conversations about code and life.</div>
+      <div class="url">coffeewithclaudia.com</div>
+    </div>
+    <div class="photo"></div>
+    <div class="cup">☕</div>
+  </body>
+</html>
